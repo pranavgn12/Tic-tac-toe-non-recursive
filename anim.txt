@@ -1,0 +1,131 @@
+for(k=174,c=0; c<1.04 && !WindowShouldClose(); k=174+452*c*(2-c), c+=0.04){
+                         DrawLineEx((Vector2) {174,174+150*j+75},(Vector2) {k,174+150*j+75}, 10, BLACK);
+                         EndDrawing();
+                         }
+                        
+                         switch(j){
+                             case 0 : jg=1;break;
+                             case 1 : jg=0;break;
+                             case 2 : jg=-1;
+                         }
+                         
+                         for(g=0,c=0; c<1.025 && !WindowShouldClose(); g=jg*150*c*(2-c), c+=0.025){
+                         
+                         ClearBackground((Color){k,250,250,250});
+                         
+                        draw();
+                        DrawRectangle(174, 174+150*j, 142, 142,WHITE);
+                        DrawRectangle(174+150, 174+150*j, 142, 142,WHITE);
+                        DrawRectangle(174+300, 174+150*j, 142, 142,WHITE);
+                        
+                       
+                         
+                        DrawLineEx((Vector2) {174+150*0+35+150*c*(2-c),174+150*j+35+g},(Vector2) {174+150+150*c*(2-c)-35,174+150*(j+1)-35+g}, 10, BLACK);
+                        DrawLineEx((Vector2) {174+150+150*c*(2-c)-35,174+150*j+35+g},(Vector2) {174+150*c*(2-c)+35,174+150*(j+1)-35+g}, 10, BLACK);
+                         
+                         DrawLineEx((Vector2) {174+150+35,174+150*j+35+g},(Vector2) {174+150*2-35,174+150*(j+1)-35+g}, 10, BLACK);
+                        DrawLineEx((Vector2) {174+300-35,174+150*j+35+g},(Vector2) {174+150+35,174+150*(j+1)-35+g}, 10, BLACK);
+                         
+                         
+                        DrawLineEx((Vector2) {174+150*2+35-150*c*(2-c),174+150*j+35+g},(Vector2) {174+150*3-150*c*(2-c)-35,174+150*(j+1)-35+g}, 10, BLACK);
+                        DrawLineEx((Vector2) {174+150*3-150*c*(2-c)-35,174+150*j+35+g},(Vector2) {174+150*2-150*c*(2-c)+35,174+150*(j+1)-35+g}, 10, BLACK); 
+                         
+                         
+                        
+                         
+                         
+                         
+                         DrawLineEx((Vector2) {174+(150+75)*c*(2-c),174+150*j+75+g},(Vector2) {626-(150+75)*c*(2-c),174+150*j+75+g}, 10, BLACK);
+                         EndDrawing();
+                         }
+                         
+                         
+                         
+                         EndDrawing();
+                         
+                         ClearBackground((Color){k,250,250,250});
+                         
+                        draw();
+                        DrawRectangle(174, 174+150*j, 142, 142,WHITE);
+                        DrawRectangle(174+150, 174+150*j, 142, 142,WHITE);
+                        DrawRectangle(174+300, 174+150*j, 142, 142,WHITE);
+                        
+                       
+                         
+                        DrawLineEx((Vector2) {174+150*0+35+150*c*(2-c),174+150*j+35+g},(Vector2) {174+150+150*c*(2-c)-35,174+150*(j+1)-35+g}, 10, BLACK);
+                        DrawLineEx((Vector2) {174+150+150*c*(2-c)-35,174+150*j+35+g},(Vector2) {174+150*c*(2-c)+35,174+150*(j+1)-35+g}, 10, BLACK);
+                         
+                         DrawLineEx((Vector2) {174+150+35,174+150*j+35+g},(Vector2) {174+150*2-35,174+150*(j+1)-35+g}, 10, BLACK);
+                        DrawLineEx((Vector2) {174+300-35,174+150*j+35+g},(Vector2) {174+150+35,174+150*(j+1)-35+g}, 10, BLACK);
+                         
+                         
+                        DrawLineEx((Vector2) {174+150*2+35-150*c*(2-c),174+150*j+35+g},(Vector2) {174+150*3-150*c*(2-c)-35,174+150*(j+1)-35+g}, 10, BLACK);
+                        DrawLineEx((Vector2) {174+150*3-150*c*(2-c)-35,174+150*j+35+g},(Vector2) {174+150*2-150*c*(2-c)+35,174+150*(j+1)-35+g}, 10, BLACK); 
+                         
+                         
+                        
+                         
+                         
+                         
+                                                  DrawLineEx((Vector2) {174+(150+75)*c*(2-c),174+150*j+75+g},(Vector2) {626-(150+75)*c*(2-c),174+150*j+75+g}, 10, BLACK);
+                         EndDrawing();
+                         
+
+
+
+
+
+
+                         //for(k=174,c=0; c<1.04 && !WindowShouldClose(); k=174+452*c*(2-c), c+=0.04){
+                            for(int aa=0 ; aa<50 && !WindowShouldClose() ; aa++) {   
+                            DrawRectangle(0, 0, 800, 800,(Color){255,255,255,51});
+                            
+                            
+                            DrawLineEx((Vector2) {174+150+35,174+150+35},(Vector2) {174+150*2-35,174+150*2-35}, 10, BLACK);
+                            DrawLineEx((Vector2) {174+300-35,174+150+35},(Vector2) {174+150+35,174+150*2-35}, 10, BLACK);
+                            EndDrawing();}
+                           ClearBackground(WHITE);
+                           DrawLineEx((Vector2) {174+150+35,174+150+35},(Vector2) {174+150*2-35,174+150*2-35}, 10, BLACK);
+                            DrawLineEx((Vector2) {174+300-35,174+150+35},(Vector2) {174+150+35,174+150*2-35}, 10, BLACK);
+                           EndDrawing();
+                           ClearBackground(WHITE);
+                           DrawLineEx((Vector2) {174+150+35,174+150+35},(Vector2) {174+150*2-35,174+150*2-35}, 10, BLACK);
+                           DrawLineEx((Vector2) {174+300-35,174+150+35},(Vector2) {174+150+35,174+150*2-35}, 10, BLACK);
+                           EndDrawing();
+                             
+                           for(g=0,c=0; c<1.03 && !WindowShouldClose(); g=35*c*(2-c), c+=0.03){
+                            ClearBackground(WHITE);
+                            DrawLineEx((Vector2) {174+150+35-g,174+150+35-g},(Vector2) {174+150*2-35+g,174+150*2-35+g}, 10+g/3.5, BLACK);
+                            DrawLineEx((Vector2) {174+150*2-35+g,174+150+35-g},(Vector2) {174+150+35-g,174+150*2-35+g}, 10+g/3.5, BLACK);
+                            EndDrawing();   
+                               }
+                               
+                              
+                            c=0;
+                            while(!WindowShouldClose()){
+                            ClearBackground(WHITE);
+                            DrawTextEx(Ar, "WINNER!", (Vector2) {245,174}, 90, 1, BLACK);
+                            DrawLineEx((Vector2) {174+150,174+150},(Vector2) {174+150*2,174+150*2}, 20, BLACK);
+                            DrawLineEx((Vector2) {174+300,174+150},(Vector2) {174+150,174+150*2}, 20, BLACK);
+                            if(GetMouseX() > 144 && GetMouseX() < 800-144 && GetMouseY() > 600 && GetMouseY() < 800-104){
+                             if(IsMouseButtonDown(0))
+                               goto st;                                 
+                             if( c<1.06){
+                             c+=0.03;
+                            }}
+                            else{
+                            if(c>0)
+                             c-=0.03;}
+                             DrawRectangleRounded((Rectangle) {144,800-104-115,512,115}, 57.5, 25,(Color){255-255*c*(2-c),255-255*c*(2-c),255-255*c*(2-c),255});
+                            DrawTextEx(Ar, "Restart", (Vector2) {144+110,800-104-115+10}, 90, 1, (Color){255*c*(2-c),255*c*(2-c),255*c*(2-c),255});
+                            
+                            DrawRectangleRoundedLinesEx((Rectangle) {144+5,800-104-115+5,512-10,115-10}, 57.5, 25, 5, (Color){0,0,0,255-255*c*(2-c)}); 
+                            
+                            
+                                    
+                            
+                            EndDrawing();
+                            
+                         
+                         
+                         }
