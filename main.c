@@ -2,7 +2,9 @@
 #include "math.h"
 # define pi 3.1415
 #include "stdlib.h"
+#include "stddef.h" 
 #include "raylib.h"
+#define res 100
 int r;
 int a[3][3];
 int i, j, k, l, g, jg, cn;
@@ -59,7 +61,7 @@ void draw() {
 				DrawLineEx((Vector2) { 174 + 150 * (k + 1) - 35, 174 + 150 * l + 35 }, (Vector2) { 174 + 150 * k + 35, 174 + 150 * (l + 1) - 35 }, 10, BLACK);
 			}
 			else if (a[k][l] == 2) {
-				m = 100;
+				m = res;
 				n = 360 / m;
 				o = 45;
 				for (; m > 0; m--) {
@@ -209,7 +211,7 @@ int ev(int* a, int i, int j) {
 			t= t>1? 1: 2;
 			if(l>-1){
 			c++;
-			//printf("a\n");
+			//printf("a\n");
 			
 			*((*(s+l))+(*(p+l)))=v;                                                           ////////////////////////////////////////////////////////
 			*(a+(*((*(m+l))+(*(p+l)))))=0;
@@ -279,14 +281,16 @@ int main(void)
 	// Initialization
 	//---------------------------------------------------  -----------------------------------
 	SetRandomSeed(time(NULL));
+    const int screenWidth = 800;
+	const int screenHeight = 800;
+    InitWindow(screenWidth, screenHeight, "Tic Tac Toe");
 	//SetConfigFlags(FLAG_WINDOW_RESIZABLE);
 	//int a[3][3]={{0,0,0},{0,0,0},{0,0,0}};
-	const int screenWidth = 800;
-	const int screenHeight = 800;
-	Ar = LoadFontEx("./resources/arial.ttf", 32, 0, 250);
+	
+	Ar = LoadFontEx("arial.ttf", 90, NULL, 0);
 	SetConfigFlags(FLAG_MSAA_4X_HINT);
-	SetTargetFPS(60);
-	InitWindow(screenWidth, screenHeight, "Tic Tac Toe");
+	SetTargetFPS(50);
+	
 	BeginDrawing();
 st: cn = 0;
 	for (k = 0; k < 3; k++)
@@ -364,7 +368,7 @@ st: cn = 0;
 				draw();
 				EndDrawing();
 				for (k = 0, c = 0; c < 1.04 && !WindowShouldClose(); k = 360 * c * (2 - c), c += 0.04) {
-					m = 100;
+					m = res;
 					n = k / m;
 					o = 45;
 					for (; m > 0; m--) {
@@ -549,7 +553,7 @@ st: cn = 0;
 					DrawRectangle(174 + 150, 174 + 150 * j, 142, 142, WHITE);
 					DrawRectangle(174 + 300, 174 + 150 * j, 142, 142, WHITE);
 
-					m = 100;
+					m = res;
 					n = 360 / m;
 					o = 45;
 					for (; m > 0; m--) {
@@ -652,7 +656,7 @@ w:  c = 0;
 			DrawLineEx((Vector2) { 174 + 300, 174 + 150 }, (Vector2) { 174 + 150, 174 + 150 * 2 }, 20, BLACK);
 		}
 		else if (i == 1) {
-			m = 100;
+			m = res;
 			n = 360 / m;
 			o = 100;
 			for (; m > 0 && !WindowShouldClose(); m--) {
