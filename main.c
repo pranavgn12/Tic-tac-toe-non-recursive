@@ -4,6 +4,7 @@
 #include "stdlib.h"
 #include "stddef.h" 
 #include "raylib.h"
+#include "arial_data.h" 
 #define res 100
 int r;
 int a[3][3];
@@ -287,9 +288,9 @@ int main(void)
 	//SetConfigFlags(FLAG_WINDOW_RESIZABLE);
 	//int a[3][3]={{0,0,0},{0,0,0},{0,0,0}};
 	
-	Ar = LoadFontEx("arial.ttf", 90, NULL, 0);
+	Ar = LoadFontFromMemory(".ttf", arial_ttf, arial_ttf_len, 100, 0, 0);
 	SetConfigFlags(FLAG_MSAA_4X_HINT);
-	SetTargetFPS(50);
+	SetTargetFPS(45);
 	
 	BeginDrawing();
 st: cn = 0;
